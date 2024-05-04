@@ -1,16 +1,18 @@
 ﻿#include <iostream>
-
+using namespace std;
 int main() {
+    setlocale(LC_ALL, "RU");
     int N;
     int sum = 0;
 
-    std::cout << "Введите число N: ";
-    std::cin >> N;
+    cout << "Введите число N: ";
+    cin >> N;
 
     for (int i = 1; i <= N; ++i) {
         sum += i;
     }
 
-    std::cout << "Сумма чисел от 1 до " << N << " равна " << sum << std::endl;
-
+    cout << "Сумма чисел от 1 до " << N << " равна " << sum << endl;
+    cout << "Изменение для работы" << endl;
     return 0;
+}
